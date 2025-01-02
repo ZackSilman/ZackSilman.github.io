@@ -1,0 +1,302 @@
+/*
+
+Font and paragraph changes
+
+*/
+
+body {
+    background-color: white;
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  h1 {
+    
+    padding-top: 1%;
+    color: black;
+    text-align: center;
+    font-family: monospace;
+
+  }
+
+  h2 {
+
+    color: black;
+    text-align: left;
+    font-family: monospace;
+    font-size: 24px;
+
+  }
+
+  h3 {
+
+    color: black;
+    text-align: center;
+    font-family: monospace;
+    font-size: 15px;
+
+  }
+  
+  p {
+
+    padding-top: 2%;
+    padding-left: 9%;
+    padding-right: 9%;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;;
+    font-size: 15px;
+
+  }
+
+  .p2 {
+
+    padding-top: 2%;
+    padding-left: 10%;
+    padding-right: 10%;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+    line-height: 120%;
+
+  }
+
+  .p3 {
+
+    padding-top: 2%;
+    padding-left: 10%;
+    padding-right: 10%;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+    line-height: 120%;
+    text-align: center;
+
+  }
+
+  ul{
+
+    padding-top: 2%;
+    padding-left: 15%;
+    list-style: circle;
+
+  }
+
+  li { 
+
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+
+  }
+
+  hr.solid {
+    border-top: 6px solid rgb(50, 50, 50);
+  }
+
+  figure{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-left: 3%;
+    text-align: center;
+  }
+
+  .copy-link {
+    cursor: pointer;
+}
+
+.copy-link:hover {
+    color: darkblue;
+}
+
+
+
+/*
+
+This section will be for grid setup and layout
+
+*/
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows:  auto 300px;
+  justify-content: center; /* Center the entire grid */
+  align-content: center;
+  border-bottom: black;
+  border-top: black;
+  gap: 10px;
+  margin: 0 auto;
+  
+}
+
+.item1 {
+  grid-column: 1/ span 4;
+  grid-row: 1;
+  object-fit: fill;
+  text-align: center;
+  background-color: rgb(227, 227, 227);
+  
+  
+}
+
+.item2 {
+  grid-column: 2;
+  grid-row: 2;
+  border-top: 4px solid black;
+  object-fit: contain;
+  padding-left: 3%;
+  
+}
+
+.item2_5{
+  grid-column: 1;
+  grid-row: 2;
+  border-top: 4px solid black;
+  object-fit: contain;
+  padding-left: 3%;
+}
+
+.item3 {
+  grid-column: 3/ span 2;
+  grid-row: 2;
+  
+}
+
+.item3 img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  
+}
+
+.item4 {
+  grid-column: 1/ span 2;
+  grid-row: 2;
+}
+
+.item4 img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  
+  
+}
+
+.item5{
+  grid-column: 3;
+  grid-row: 2;
+  border-top: 4px solid black;
+  object-fit: contain;
+  padding-left: 3%;
+}
+
+.item5_5{
+  grid-column: 4;
+  grid-row: 2;
+  border-top: 4px solid black;
+  object-fit: contain;
+  padding-left: 3%;
+}
+
+.item6 {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.item6 img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.item7 {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.item7 img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.item8 {
+  grid-column: 3;
+  grid-row: 2;
+}
+
+.item8 img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.item9 {
+  grid-column: 4;
+  grid-row: 2;
+}
+
+.item9 img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+/*
+
+This is for container 2 
+
+*/
+
+.container2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows:  100px;
+  justify-content: center; /* Center the entire grid */
+  align-content: center;
+  border-bottom: black;
+  border-top: black;
+  gap: 5px;
+  margin: 0 auto;
+  padding-bottom: 75px;
+  
+}
+
+.item10{
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.item11{
+  grid-column: 3;
+  grid-row: 1;
+}
+
+
+/*
+
+This code is currently not used by the main
+
+hr.blank {
+  border: none; 
+  margin: 0;
+  height: 0;
+  position: relative; 
+}
+
+hr.blank::before {
+  content: ""; 
+  display: block;
+  height: 20px; 
+  background-color: white; 
+}
+
+hr.blank::after {
+  content: ""; 
+  display: block;
+  height: 6px; 
+  background-color: rgb(50, 50, 50); 
+  margin-top: 10px; 
+}
+
+*/
+
